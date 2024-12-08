@@ -45,6 +45,11 @@ sudo mv ffmpeg-*-amd64-static/ffmpeg /usr/local/bin/
 sudo mv ffmpeg-*-amd64-static/ffprobe /usr/local/bin/
 ```
 
+4.不要なファイルとディレクトリを削除
+```sh
+rm -f ffmpeg-release-amd64-static.tar.xz
+rm -rf ffmpeg-*-amd64-static
+```
 
 ## 実行方法
 
@@ -99,9 +104,3 @@ Enter the options for the operation:
 Enter the start time (e.g., 00:00:00):
 Enter the duration (in seconds):
 ```
-
-
-
-### 注意
-- 名前付きパイプ（UNIXソケット）を使用しているため、Windowsの標準的なコマンドプロンプトやPowerShellでは動作しません。
-- このアプリケーションはLinuxまたはWSL（Windows Subsystem for Linux）環境で動作します。
